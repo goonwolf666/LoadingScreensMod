@@ -15,7 +15,7 @@ This approach avoids the washed-out alpha issues that popped up in v1.29. This i
 imageset-packer pack ./pics ./data -F dxt5 -q 8 -n loading_screens1
 ```
 8. You should now have _loading_screens**1**.edds_ and _loading_screens**1**.imageset_ in your P:\LoadingScreensMod\data\ folder
-9. Repeat steps 6 and 7 for your **_next 6_** images, and when you run the script snippet at stage 7 change the number on the end of the last _loading_screens_ to _**2**_.
+9. Delete the png files in your temporary \pics folder, and repeat steps 7 and 8 for your **_next 6_** image. When you run the script snippet at stage 7 change the number on the end of the last _loading_screens_ parameter to _**2**_.
 > If you want to use more than 12 images, you should be able to repeat these steps makibng sure to update the imageset _**number**_ in the -n switch
 10. Open Workbench from the DayZ Tools and navigate to the EDDS files you made in P:\LoadingScreenMod\data. They should kinda look like:
 > <img src="dayzworkbench1.jpg" width="600">
