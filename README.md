@@ -9,7 +9,7 @@ This approach avoids the washed-out alpha issues that popped up in v1.29. This i
 2. Download this repo and extract it so you have a P:\LoadingScreensMod\config.cpp with data\ and scripts\ subfolders
 3. Download the latest release of [Strykar's Imageset Editor here](https://github.com/Strykar86/DayZ-Imageset-Editor/releases/tag/v1.3)
 5. Create 12 loading images as 1920x1080 png files and name them 'loading1.png'...'loading12.png'.
-6. Copy these files to _LoadingScreensMod\data_ folder you're happy
+6. Copy these files to _LoadingScreensMod\data_ folder
 7. Run Strykar's Imageset Editor
 8. Adjust the canvas size (in top menu) to 8192
 9. Click 'Import Image(s)' and select all your png files in the _\data_ folder. This should look like this:
