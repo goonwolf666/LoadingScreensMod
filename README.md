@@ -14,7 +14,7 @@ This approach avoids the washed-out alpha issues that popped up in v1.29. This i
 7. Adjust the canvas size (in top menu) to 8192
 8. Click '**Import Image(s)**' and select your 12 PNG files in the _\data_ folder. This should look something like this:
 ><img src="dayzimageseteditor1.jpg" width="600">
-9. Click '**EXPORT IMAGESET + EDDS**', choose the same folder they're (_\data_) and name it 'loading_screens1'
+9. Click '**EXPORT IMAGESET + EDDS**', choose the same folder you're working in (_\data_) and name it 'loading_screens1'
 11. If you have _loading_screens1.EDDS_ and _loading_screens1.imageset_ in your _\data_ folder, you can delete the PNGs files
 12. That's it! Time to pack and test :shipit: I can recommend [Tyson's RaG-PBO-Builder](https://github.com/Tyson89/RaG-PBO-Builder) as a free and regularly updated packing tool.
 
