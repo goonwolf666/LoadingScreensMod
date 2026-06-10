@@ -4,34 +4,27 @@ This approach avoids the washed-out alpha issues that popped up in v1.29. This i
 
 
 
-## Instructions for packing pngs to the loading_screens1 imageset: :satellite:
+## Instructions for creating imageset(s) from PNGs: :satellite:
 1. Install/run DayZ Tools and mount your P drive
-2. Download this repo and extract it so you have a P:\LoadingScreensMod\config.cpp with data\ and scripts\ subfolders
+2. Download this repo and extract it there, so you have a _P:\LoadingScreensMod\config.cpp_ with _\data_ and _\scripts\3_game_ subfolders
 3. Download the latest release of [Strykar's Imageset Editor here](https://github.com/Strykar86/DayZ-Imageset-Editor/releases/tag/v1.3)
-5. Create 12 loading images as 1920x1080 png files and name them 'loading1.png'...'loading12.png'.
-6. Copy these files to _LoadingScreensMod\data_ folder
-7. Run Strykar's Imageset Editor
-8. Adjust the canvas size (in top menu) to 8192
-9. Click 'Import Image(s)' and select all your png files in the _\data_ folder. This should look like this:
+4. Get your **12** loading screen PNG files of 1920x1080 resolution and name them 'loading1.png' to 'loading12.png'.
+5. Copy these files to _LoadingScreensMod\data_ folder
+6. Run Strykar's Imageset Editor
+7. Adjust the canvas size (in top menu) to 8192
+8. Click '**Import Image(s)**' and select your 12 PNG files in the _\data_ folder. This should look something like this:
 ><img src="dayzimageseteditor1.jpg" width="600">
-9. Click 'Export Imageset + EDDS' and save that in the _\data_ folder as 'loading_screens1'.
-10. Confirm you have _loading_screens1.EDDS_ and _loading_screens1.imageset_ in your _P:\LoadingScreensMod\data_ folder. If you do, delete all the png files there now.
-12. Open Workbench from the DayZ Tools and navigate to the EDDS file you just made in _P:\LoadingScreenMod\data_. They should kinda look like:
-> <img src="dayzworkbench1.jpg" width="600">
-11. Now navigate to the imageset file you made in the same folder, which should look like:
-> <img src="dayzworkbench2.jpg" width="600">
-12. Double-click the 'Path' highlighted there and browse to the EDD files in the same folder. This should update the path to include a GUID prefix thats required to access the texture correctly (I guess?!), and now look something like:
-> <img src="dayzworkbench3.jpg" width="600">
-13. Right-click the imageset you update in the workbench browser and 'Save Selection'.
-14. Thats it! You can delete the temporary _\pics_ folder, then compile and test =) :shipit:
+9. Click '**EXPORT IMAGESET + EDDS**', choose the same folder they're (_\data_) and name it 'loading_screens1'
+11. If you have _loading_screens1.EDDS_ and _loading_screens1.imageset_ in your _\data_ folder, you can delete the PNGs files
+12. That's it! Time to pack and test :shipit: I can recommend [Tyson's RaG-PBO-Builder](https://github.com/Tyson89/RaG-PBO-Builder) as a free and regularly updated packing tool.
 
 
 
 ## Issues/notes: :finnadie:
-- This was way more annoying that expected!
+- This was way more annoying than expected!
 - If you add more or less than 12 images, you will need to edit the TOTAL_IMAGES contant in _scripts/3_game/loadingscreens.c_
-- If you want to add more than one imageset (required for more than a couple of 4k images), you will need to add those files to the imageset array in _config.cpp_ as well as tweak _scripts/3_game/loadingscreens.c_ 
-- While Stryker's tool makes creating the imageset a breeze, my experiments seem to show that the workbench step (12) adds the GUID prefix to the texture path, whichg did the trick when everything else failed(?!)
+- If you want to add more than one imageset (required for than a couple of 4k images), you will need to add those files to the imageset array in _config.cpp_ as well as tweak _scripts/3_game/loadingscreens.c_
 - Many thanks to Strykar and the other helpful folk who worked through these issues in the [DayZ Modders UI-UX discord](https://discord.com/channels/452035973786632194/498756118906929162)
-- If you wanted to use Woozy's imageset-packer instead, refer to my old (more complicated) [instructions here](README_OLD.md)
-- I am probably an idiot and there's an easier way to do this?
+- If you wanted to use Woozy's imageset-packer OR see how to do a multi-imageset version, refer to my old (more complicated) [instructions here](README_OLD.md)
+- This uses the vanilla game layout files, which means the usual loading progress bar/queue position/count down widgets appear on the bottom of the screen. It's easy to hide those too if you're keen but you want to check what they're called in each screen in [the vanilla source](https://github.com/BohemiaInteractive/DayZ-Script-Diff/blob/c75a7824add7619616f2516402ff0f7018299a8a/scripts/3_game/dayzgame.c#L688)
+- If you were going to add a logo or text to your backgrounds, I would add them to the top half because those vanilla layouts mask the bottom third of the screen
