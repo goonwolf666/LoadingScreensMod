@@ -1,5 +1,5 @@
 # Basic DayZ Loading-Screens Mod for v1.29 :dizzy:
-DayZ loading screens mod that uses imagesets created with either [Strykar86's Imageset Editior](https://github.com/Strykar86/DayZ-Imageset-Editor) or [WoozyMasta's imageset-packer tool](https://github.com/WoozyMasta/imageset-packer). 
+DayZ loading screens mod that uses imagesets created with [Strykar86's Imageset Editior](https://github.com/Strykar86/DayZ-Imageset-Editor). 
 This approach avoids the washed-out alpha issues that popped up in v1.29. This is set up to select one of 12 images as a background to the server loading / queue / countdown screens.
 
 
@@ -25,7 +25,7 @@ This approach avoids the washed-out alpha issues that popped up in v1.29. This i
 - If you add more or less than 12 images, you will need to edit the TOTAL_IMAGES contant in _scripts/3_game/loadingscreens.c_
 - If you want to add more than one imageset (required for than a couple of 4k images), you will need to add those files to the imageset array in _config.cpp_ as well as tweak _scripts/3_game/loadingscreens.c_
 - Many thanks to Strykar and the other helpful folk who worked through these issues in the [DayZ Modders UI-UX discord](https://discord.com/channels/452035973786632194/498756118906929162)
-- If you wanted to use Woozy's imageset-packer OR see how to do a multi-imageset version, refer to my old (more complicated) [instructions here](README_OLD.md)
+- If you wanted to use [Woozy's imageset-packer](https://github.com/WoozyMasta/imageset-packer) OR see how to do a multi-imageset version, refer to my old (more complicated) [instructions here](README_OLD.md)
 - This uses the vanilla game layout files, which means the usual loading progress bar/queue position/count down widgets appear on the bottom of the screen. It's easy to hide those too if you're keen but you want to check what they're called in each screen in [the vanilla source](https://github.com/BohemiaInteractive/DayZ-Script-Diff/blob/c75a7824add7619616f2516402ff0f7018299a8a/scripts/3_game/dayzgame.c#L688)
 - If you were going to add a logo or text to your backgrounds, I would add them to the top half because those vanilla layouts mask the bottom third of the screen
 - My version of this on [the workshop is here](https://steamcommunity.com/sharedfiles/filedetails/?id=3740022109), if you want to see my screens in action or decompile it to check something...
