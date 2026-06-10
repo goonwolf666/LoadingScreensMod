@@ -1,7 +1,7 @@
 // =================================================================================
 //  LoadingScreenHelper
-//  Uses Apply(WidgetRoot,BackgroundWidget) to call a random background
-//	image AND hide any logos and modded-warning widgets.
+//  Uses Apply(WidgetRoot,BackgroundWidget) to call a random background image
+//	AND hide any logos and modded-warning widgets.
 //
 //  Imageset mapping:
 //    roll 1–6  → set:loading_screens1	image:loading1 … loading6
