@@ -1,3 +1,0 @@
-This is a dummy folder for you to put stuff in as you go...
-I can't put my actual EDDS file here because its too big for github =)
-Delete this file when youve got your folders set up and start dropping some PNG files here!
