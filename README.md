@@ -1,10 +1,13 @@
-# Basic DayZ Loading-Screens Mod for v1.29 :dizzy:
-DayZ loading screens mod that uses imagesets created with [Strykar86's Imageset Editior](https://github.com/Strykar86/DayZ-Imageset-Editor). 
-This approach avoids the washed-out alpha issues that popped up in v1.29. This is set up to select one of 12 images as a background to the server loading / queue / countdown screens.
+# Simple Loading Screens Template mod for DayZ v1.29 :dizzy:
+This is a simple DayZ loading screens template that uses imagesets created with [Strykar86's Imageset Editior](https://github.com/Strykar86/DayZ-Imageset-Editor). 
+Use these instructions to convert 12 of your own 1920x1080 PNG files to imageset(s), which corrects the washed-out issue that popped up in v1.29.
+The included code will randomly select a background from that imageset for your server's loading / queue / countdown screens.
+With a bit of extra editing, you can easily add many more images or add backgrounds of a much higher resolution.
+  
+**You can subscribe to a packed version of this mod (using the included demo images) from the Steam Workshop here:**
+https://steamcommunity.com/sharedfiles/filedetails/?id=3742527843
 
-
-
-## Instructions for creating imageset(s) from PNGs: :satellite:
+## Basic Instructions for creating your own imageset: :satellite:
 1. Install/run DayZ Tools and mount your P drive
 2. Download this repo and extract it there, so you have a _P:\LoadingScreensMod\config.cpp_ with _\data_ and _\scripts\3_game_ subfolders
 3. Download the latest release of [Strykar's Imageset Editor here](https://github.com/Strykar86/DayZ-Imageset-Editor/releases/tag/v1.3)
@@ -17,15 +20,12 @@ This approach avoids the washed-out alpha issues that popped up in v1.29. This i
 9. Click '**EXPORT IMAGESET + EDDS**', choose the same folder you're working in (_\data_) and name it 'loading_screens1'
 11. If you have _loading_screens1.EDDS_ and _loading_screens1.imageset_ in your _\data_ folder, you can delete the PNGs files
 12. That's it! Time to pack and test :shipit: I can recommend [Tyson's RaG-PBO-Builder](https://github.com/Tyson89/RaG-PBO-Builder) as a free and regularly updated packing tool.
-
-
-
+ 
 ## Issues/notes: :finnadie:
-- This was way more annoying than expected!
 - If you add more or less than 12 images, you will need to edit the TOTAL_IMAGES contant in _scripts/3_game/loadingscreens.c_
 - If you want to add more than one imageset (required for than a couple of 4k images), you will need to add those files to the imageset array in _config.cpp_ as well as tweak _scripts/3_game/loadingscreens.c_
 - Many thanks to Strykar and the other helpful folk who worked through these issues in the [DayZ Modders UI-UX discord](https://discord.com/channels/452035973786632194/498756118906929162)
 - If you wanted to use [Woozy's imageset-packer](https://github.com/WoozyMasta/imageset-packer) OR see how to do a multi-imageset version, refer to my old (more complicated) [instructions here](README_OLD.md)
-- This uses the vanilla game layout files, which means the usual loading progress bar/queue position/count down widgets appear on the bottom of the screen. It's easy to hide those too if you're keen but you want to check what they're called in each screen in [the vanilla source](https://github.com/BohemiaInteractive/DayZ-Script-Diff/blob/c75a7824add7619616f2516402ff0f7018299a8a/scripts/3_game/dayzgame.c#L688)
+- This uses the vanilla game layout files, which means the usual loading progress bar/queue position/count down widgets appear on the bottom of the screen. It's easy to hide those too but you should confirm what they're called in each layout in [the vanilla source](https://github.com/BohemiaInteractive/DayZ-Script-Diff/blob/c75a7824add7619616f2516402ff0f7018299a8a/scripts/3_game/dayzgame.c#L688)
 - If you were going to add a logo or text to your backgrounds, I would add them to the top half because those vanilla layouts mask the bottom third of the screen
 - My version of this on [the workshop is here](https://steamcommunity.com/sharedfiles/filedetails/?id=3740022109), if you want to see my screens in action or decompile it to check something...
