@@ -9,17 +9,21 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=3742527843
 
 ## Basic Instructions for creating your own imageset: :satellite:
 1. Install/run DayZ Tools and mount your P drive
-2. Download this repo and extract it there, so you have a _P:\LoadingScreensMod\config.cpp_ with _\data_ and _\scripts\3_game_ subfolders
-3. Download the latest release of [Strykar's Imageset Editor here](https://github.com/Strykar86/DayZ-Imageset-Editor/releases/tag/v1.3)
-4. Get your **12** loading screen PNG files of 1920x1080 resolution and name them 'loading1.png' to 'loading12.png'.
-5. Copy these files to _LoadingScreensMod\data_ folder
-6. Run Strykar's Imageset Editor
-7. Adjust the canvas size (in top menu) to 8192
-8. Click '**Import Image(s)**' and select your 12 PNG files in the _\data_ folder. This should look something like this:
-><img src="dayzimageseteditor1.jpg" width="600">
-9. Click '**EXPORT IMAGESET + EDDS**', choose the same folder you're working in (_\data_) and name it 'loading_screens1'
+2. Download this repo and extract the 'LoadingScreensMod' to P:
+   - You should have a _P:\LoadingScreensMod\config.cpp_
+   - You should also have _P:\LoadingScreensMod\data_ and _P:\LoadingScreensMod\scripts\3_game_ subfolders
+3. Also download:<br>
+   - The latest release of [Strykar's Imageset Editor](https://github.com/Strykar86/DayZ-Imageset-Editor/releases/tag/v1.3) to build the imageset
+   - (Optional) the latest release of [Tyson's RaG-PBO-Builder](https://github.com/Tyson89/RaG-PBO-Builder) to pack your mod.
+4. Copy your **12** loading screen PNG files, of 1920x1080 and named 'loading1.png' to 'loading12.png', into _P:\LoadingScreensMod\data_
+5. Create the Imageset by: <br>
+   - Running Strykar's Imageset Editor
+   - Adjust the canvas size (in top menu) to 8192
+   - Click '**Import Image(s)**' and select your 12 PNG files in the _\data_ folder
+   - Click '**EXPORT IMAGESET + EDDS**', and choose the _\data_ we're working in
+   - Name the imageset _'loading_screens1'_
 11. If you have _loading_screens1.EDDS_ and _loading_screens1.imageset_ in your _\data_ folder, you can delete the PNGs files
-12. That's it! Time to pack and test :shipit: I can recommend [Tyson's RaG-PBO-Builder](https://github.com/Tyson89/RaG-PBO-Builder) as a free and regularly updated packing tool.
+12. That's it! Time to pack and test :shipit: 
  
 ## Issues/notes: :finnadie:
 - If you add more or less than 12 images, you will need to edit the TOTAL_IMAGES contant in _scripts/3_game/loadingscreens.c_
