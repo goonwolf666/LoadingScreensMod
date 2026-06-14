@@ -1,8 +1,8 @@
 # Simple Loading Screens Template mod for DayZ v1.29 :dizzy:
-This is a simple DayZ loading screens template that uses imagesets created with [Strykar86's Imageset Editior](https://github.com/Strykar86/DayZ-Imageset-Editor). 
-Use these instructions to convert 12 of your own 1920x1080 PNG files to imageset(s), which corrects the washed-out issue that popped up in v1.29.
-The included code will randomly select a background from that imageset for your server's loading / queue / countdown screens.
-With a bit of extra editing, you can easily add many more images or add backgrounds of a much higher resolution.
+**This is a simple DayZ loading screens template that uses imagesets created with [Strykar86's Imageset Editior](https://github.com/Strykar86/DayZ-Imageset-Editor).**
+- Use the code in the _LoadingScreensMod_ folder and follow these instructions to convert 12 of your own 1920x1080 PNG files to an imageset, which corrects the washed-out background widget issue.
+- The included code will randomly select a background from that imageset for your server's loading / queue / countdown screens.
+- With a bit of extra editing, you can easily add many more images or backgrounds of a much higher resolution.
   
 **You can subscribe to a packed version of this mod (using the included demo images) from the Steam Workshop here:**
 https://steamcommunity.com/sharedfiles/filedetails/?id=3742527843
@@ -32,12 +32,13 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=3742527843
 7. Pack and test:
    - Use your preferred program to pack the source in _P:\LoadingScreensMod\_ 
    - RaG's PBO Builder works well for this
-   - Test the mod using DayZDiag or a local server (example bat/server files are included in the [HelpfulFiles folder](/HelpfulFiles)
+   - Test the mod using DayZDiag or a local server
    - Publish and you're done :shipit: 
  
 ## Issues/notes: :finnadie:
 - Many thanks to Strykar and the other helpful folk who worked through these issues in the [DayZ Modders UI-UX discord](https://discord.com/channels/452035973786632194/498756118906929162)
 - This uses the vanilla game layout files, which means the usual loading progress bar/queue position/count down widgets appear on the bottom of the screen.
 - You can hide/show any other widgets, but you should confirm how they're referenced in the [the vanilla source](https://github.com/BohemiaInteractive/DayZ-Script-Diff/blob/c75a7824add7619616f2516402ff0f7018299a8a/scripts/3_game/dayzgame.c#L688) and the [Vanilla Layout files](/HelpfulFiles/Vanilla_Layout_Files)
+- A .BAT and basic test server files for P: are included in the [HelpfulFiles folder](/HelpfulFiles), if you dont have a simple test harness set up
 - My own loading screens are on [the Steam workshop here](https://steamcommunity.com/sharedfiles/filedetails/?id=3740022109), if you want to decompile/compare go crazy
 - If you wanted to use [Woozy's imageset-packer](https://github.com/WoozyMasta/imageset-packer) OR see how to do a multi-imageset version, refer to my old (more complicated) [instructions here](README_OLD.md)
