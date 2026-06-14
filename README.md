@@ -7,6 +7,9 @@
 **You can subscribe to a packed version of this mod (using the included demo images) from the Steam Workshop here:**<br>
 https://steamcommunity.com/sharedfiles/filedetails/?id=3742535229
 <br><br>
+**NEW: You can follow the instructions below along with the crappy screen-recording video I made here:**<br>
+https://youtu.be/ZcoEt63tzXo
+<br>
 ## Basic Instructions for creating your own imageset: :satellite:
 1. Install/run DayZ Tools and mount your P: drive
 2. Download this repo and extract the 'LoadingScreensMod' folder to P: drive, so you have:
