@@ -1,7 +1,7 @@
 # Simple Loading Screens Template mod for DayZ v1.29 :dizzy:
 **This is a simple DayZ loading screens template that uses imagesets created with [Strykar86's Imageset Editior](https://github.com/Strykar86/DayZ-Imageset-Editor).**
 - Use the code in the _LoadingScreensMod_ folder and follow these instructions to convert 12 of your own 1920x1080 PNG files to an imageset, which corrects the washed-out background widget issue.
-- The included code will randomly select a background from that imageset for your server's loading / queue / countdown screens.
+- The included code will randomly select a background from that imageset for your DayZ server's loading / queue / countdown screens.
 - With a bit of extra editing, you can easily add many more images or backgrounds of a much higher resolution.
   
 **You can subscribe to a packed version of this mod (using the included demo images) from the Steam Workshop here:**<br>
