@@ -8,10 +8,11 @@ With a bit of extra editing, you can easily add many more images or add backgrou
 https://steamcommunity.com/sharedfiles/filedetails/?id=3742527843
 
 ## Basic Instructions for creating your own imageset: :satellite:
-1. Install/run DayZ Tools and mount your P drive
-2. Download this repo and extract the 'LoadingScreensMod' to P:
-   - You should have a _P:\LoadingScreensMod\config.cpp_
-   - You should also have _P:\LoadingScreensMod\data_ and _P:\LoadingScreensMod\scripts\3_game_ subfolders
+1. Install/run DayZ Tools and mount your P: drive
+2. Download this repo and extract the 'LoadingScreensMod' folder to P: drive, so you have:
+   - A _P:\LoadingScreensMod\config.cpp_ file
+   - A _P:\LoadingScreensMod\scripts\3_game\_loadingscreens.c_ file
+   - A _P:\LoadingScreensMod\data_ subfolder
 3. Also download:
    - The latest release of [Strykar's Imageset Editor](https://github.com/Strykar86/DayZ-Imageset-Editor/releases/tag/v1.3) to build the imageset
    - (Optional) the latest release of [Tyson's RaG-PBO-Builder](https://github.com/Tyson89/RaG-PBO-Builder) to pack your mod
@@ -19,7 +20,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=3742527843
    - You can delete all the example files in there first
    - Your new files should be named from 'loading1.png' to 'loading12.png'
    - While the current code is set up for **12** screens, you can adjust this by editing line 13 of _loadingscreens.c_
-   - These instructions are for 12 images of 1920x1080, but you can use higher resolutions and/or multiple imagesets by editing _loadingscreens.c_
+   - These instructions are for 1920x1080 resolution images, but you can use higher res or multiple imagesets by editing _loadingscreens.c_
 5. Create the Imageset by:
    - Running Strykar's Imageset Editor
    - Adjust the canvas size (in top menu) to **8192**
