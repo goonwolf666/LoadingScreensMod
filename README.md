@@ -3,14 +3,14 @@
 - Use the code in the _LoadingScreensMod_ folder and follow these instructions to convert 12 of your own 1920x1080 PNG files to an imageset, which corrects the washed-out background widget issue.
 - The included code will randomly select a background from that imageset for your DayZ server's loading / queue / countdown screens.
 - With a bit of extra editing, you can easily add many more images or backgrounds of a much higher resolution.
-  
-**You can subscribe to a packed version of this mod (using the included demo images) from the Steam Workshop here:**<br>
+
+**NEW: You can follow the instructions below along with this video I made:**<br>
+https://youtu.be/ZcoEt63tzXo _(turn on captions for detailed instructions!)_
+<br><br>
+**You can subscribe to a packed version of this mod in the Steam Workshop:**<br>
 https://steamcommunity.com/sharedfiles/filedetails/?id=3742535229
 <br><br>
-**NEW: You can follow the instructions below along with the crappy screen-recording video I made here:**:video_camera:<br>
-https://youtu.be/ZcoEt63tzXo
-<br>
-## Basic Instructions for creating your own imageset: :satellite:
+## Basic Instructions for creating a loading screens: :satellite:
 1. Install/run DayZ Tools and mount your P: drive
 2. Download this repo and extract the 'LoadingScreensMod' folder to P: drive, so you have:
    - A _P:\LoadingScreensMod\config.cpp_ file
