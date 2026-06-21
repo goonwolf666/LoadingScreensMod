@@ -40,6 +40,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=3742535229
 <br><br> 
 ## Issues/notes: :finnadie:
 - Many thanks to Strykar and the other helpful folk who worked through these issues in the [DayZ Modders UI-UX discord](https://discord.com/channels/452035973786632194/498756118906929162)
+- If you need help setting up your DayZ Tools, P: work-drive, packing or testing addons, check [Janusz K's great guide to beginning DayZ Modding here](https://medium.com/@jkamienski/beginners-guide-to-dayz-mods-development-de3055a10d31)
 - This uses the vanilla game layout files, which means the usual loading progress bar/queue position/count down widgets appear on the bottom of the screen.
 - You can hide/show any other widgets, but you should confirm how they're referenced in the [the vanilla source](https://github.com/BohemiaInteractive/DayZ-Script-Diff/blob/c75a7824add7619616f2516402ff0f7018299a8a/scripts/3_game/dayzgame.c#L688) and the [vanilla layout files I have included from the DayZ tools GUI folder](/HelpfulFiles/Vanilla_Layout_Files)
 - A .BAT and basic test server files for P: are included in the [HelpfulFiles folder](/HelpfulFiles) if you dont have a simple test harness set up
