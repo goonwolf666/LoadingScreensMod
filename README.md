@@ -36,7 +36,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=3742535229
    - Use your preferred program to pack the source in _P:\LoadingScreensMod\_ 
    - RaG's PBO Builder works well for this
    - Test the mod using DayZDiag or a local server
-   - Publish and you're done :shipit: 
+   - Publish and you're done :shipit:
 <br><br> 
 ## Issues/notes: :finnadie:
 - Many thanks to Strykar and the other helpful folk who worked through these issues in the [DayZ Modders UI-UX discord](https://discord.com/channels/452035973786632194/498756118906929162)
