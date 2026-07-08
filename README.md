@@ -3,6 +3,8 @@
 - Use the code in the _LoadingScreensMod_ folder and follow these instructions to convert 12 of your own 1920x1080 PNG files to an imageset, which corrects the washed-out background widget issue.
 - The included code will randomly select a background from that imageset for your DayZ server's loading / queue / countdown screens.
 - With a bit of extra editing, you can easily add many more images or backgrounds of a much higher resolution.
+- Test your output mod on it's own FIRST to confirm it works - there is a bat script to test mods with in [HelpfulFiles folder](/HelpfulFiles).
+- Mod load-order counts - if you're using other mod(s) that override loading screens (custom maps, server packs, etc.) then load this mod AFTER those.
 
 **NEW: You can follow the instructions below along with this video I made:**<br>
 https://youtu.be/ZcoEt63tzXo _(turn on captions for detailed instructions!)_
@@ -46,3 +48,5 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=3742535229
 - A .BAT and basic test server files for P: are included in the [HelpfulFiles folder](/HelpfulFiles) if you dont have a simple test harness set up
 - My own loading screens are on [the Steam workshop here](https://steamcommunity.com/sharedfiles/filedetails/?id=3740022109), if you want to decompile/compare go crazy
 - If you wanted to use [Woozy's imageset-packer](https://github.com/WoozyMasta/imageset-packer) OR see how to do a multi-imageset version, refer to my old (more complicated) [instructions here](README_OLD.md)
+- Test your output mod on it's own FIRST to confirm it works - there is a bat script to test mods with in [HelpfulFiles folder](/HelpfulFiles).
+- Mod load-order counts - if you're using other mod(s) that override loading screens (custom maps, server packs, etc.) then load this mod AFTER those.
