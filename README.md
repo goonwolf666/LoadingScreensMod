@@ -50,3 +50,10 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=3742535229
 - If you wanted to use [Woozy's imageset-packer](https://github.com/WoozyMasta/imageset-packer) OR see how to do a multi-imageset version, refer to my old (more complicated) [instructions here](README_OLD.md)
 - Test your output mod on it's own FIRST to confirm it works - there is a bat script to test mods with in [HelpfulFiles folder](/HelpfulFiles).
 - Mod load-order counts - if you're using other mod(s) that override loading screens (custom maps, server packs, etc.) then load this mod AFTER those.
+
+## Troubleshooting
+- Your very first test should be loading _*just*_ the PBO you make from this template using the DayZDiag debugging tool. [I have provided a .bat script to help here](https://github.com/goonwolf666/LoadingScreensMod/tree/main/HelpfulFiles)
+- The next test should be to publish your PBO to the steam workshop, subscribe and copy the keys over to your local server and then run _*just*_ that mod. Fire up your client and join that over LAN to test your screens fully
+- If both those things work but you don't see the screens when you add your PBO to your server pack - then the problem one of your _*other mods*_ is asserting over your PBO (very common for custom maps)
+- Fix this by editing [line 8 of the config.cpp file](https://github.com/goonwolf666/LoadingScreensMod/blob/e62ee6b083df916a2fdba73217c3726891bfe93f/LoadingScreensMod/config.cpp#L8) to add that mod to the requiredAddons right after "DZ_Data". You can usually find the 'proper names' of mods in your server's script_xxx.log file, or just look in that mod's config.cpp file.
+- Make sure your loading screens PBO is the very _*last*_ thing in your mod list =)
